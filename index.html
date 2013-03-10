@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/epicfullscreen.css" />
+<title>Wasalny.com - Automated GPS Traffic Crowd Sourcing</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/jquery.epicfullscreen.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>   
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/onepage.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+            //device check
+            var isMobile = false;
+    
+            if( navigator.userAgent.match(/Android/i) || 
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) || 
+                navigator.userAgent.match(/iPad/i)|| 
+                navigator.userAgent.match(/iPod/i) || 
+                navigator.userAgent.match(/BlackBerry/i)){
+                                
+                    isMobile = true;
+                            
+            }
+            
+            
+            
+            //epic fullscreen
+            $(window).load(function(){
+    
+                 $('.epicFullscreen').epicFullscreen({
+                 
+                    opacity:0.9,
+                    background:'#000',
+                    pattern:true,
+                    callback: function(){
+                    
+                        
+                        $('#featured').animate({opacity:1},500);
+                        
+                        
+                    }
+                 
+                 });    
+            });
+
+        
+        
+</script>
+
+</head>
+
+<body>
+
+<!--start wrapper-->
+<div id="wrapper" >
+    <div class="downloadFixed">
+            <div class="downloadBadges">
+                <ul>
+                    <li><a href="JavaScript:void(0);"><img width="100%"class="soon" src="images/badge-apple.png"></a></li>
+                    <li><a href="http://www.wasalny.com/app/Downloads/BBJar.aspx" target="_blank"><img src="images/badge-bb.png"></a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=wasalny.app" target="_blank"><img src="images/badge-google.png"></a></li>
+                    <li ><a href="http://store.ovi.com/content/99404" target="_blank"><img src="images/badge-nokia.png"></a></li>
+                </ul>
+            <div class="clear"></div>
+            </div>      
+    </div>        
+
+    <!--start header-->
+    <div class="header header-main clearfix">
+        <div class="inner">
+            <div class="logo-pages">
+                <div class="logo">
+                    <a class="navigateTo" href="#homepage">
+                        <img  src="images/logo-header.png" alt=""/>                   
+                    </a>
+                </div>
+            </div>
+            
+            <!--mobileMenu toggle-->
+            <div class="mobileMenuToggle"><a href=""></a></div>
+                
+            <!--navigation-->
+            <ul class="navigation">
+                <li><a class="navigateTo" href="#homepage">نوًرت</a></li>
+                <li><a class="navigateTo" href="#HowAreWeHelping">هنساعد ازاي؟</a></li>
+                <li><a class="navigateTo" href="#SeebElGPS">سيب ال GPS</a></li>
+                <li><a class="navigateTo" href="#ShoofElZa7ma">شوف الزحمة</a></li>
+                <li><a class="navigateTo" href="#ElMowasalateya">الموصلاتيه</a></li>                
+                <li><a class="navigateTo" href="#Bel2arkam">بالأرقام</a></li>
+                <li><a class="navigateTo" href="contact.html">اتصل بينا</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--end header--> 
+      
+    <!--start homepage-->
+    <div id="homepage" class="homepage section">
+        <!--background image-->
+        <div class="epicFullscreen">
+            <img class="epicImg" src="images/gallery/homepage-image.jpg" alt=""/>
+        </div>
+        <div class="content clearfix" id="featured">   
+            <div class="wasalnyLogo"><img src="images/logo.png"/></div>
+            <div class="wasalnyScreensHome"><img  src="images/wasalnyScreens-home.png" /></div>
+            <a class="navigateTo page-down" href="#HowAreWeHelping"></a>
+        </div>
+        
+    </div>
+    <!--end homepage-->
+      
+    
+    <!--start page 1-->
+    <div id="HowAreWeHelping" class="page odd section scroll" style="background:#fff url(images/patterns/test-pattern.png) repeat;">
+        <div class="content clearfix slide1">   
+            <img style="width:100%;" src="images/features1.png" />
+        </div>
+        <div id="highlight" class="highlight fixed" style="background: url(images/gallery/parallax-shapes.jpg) no-repeat;">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-inner">
+                          <h1 class="ges"> كل واحد فينا جزء من الزحمة .. خليك فخور و انت وسطها لأنك جزء من الحل .. 
+
+</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end page 1--> 
+    
+   
+
+    <!--start page 2-->
+    <div id="SeebElGPS" class="page odd section scroll" style="background:#fff url(images/patterns/test-pattern.png) repeat;">
+        <div class="content clearfix slide1">   
+            <div class="features2"><img style="width:100%;" src="images/features2.png" /></div>
+        </div>
+        <div id="highlight" class="highlight fixed" style="background: url(images/gallery/parallax-autoreporting.jpg) no-repeat;">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-inner">
+                          <h1 class="ges">لو انت في الطريق .. وصلني بينصحك تركز في السواقة .. سيب تلفونك و الريبورت الآلي هيقوم بالواجب :)</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end page 2--> 
+
+
+    <!--start page 3-->
+    <div id="ShoofElZa7ma" class="page odd section scroll" style="background:#fff url(images/patterns/test-pattern.png) repeat;">
+        <div class="content clearfix slide1">   
+            <h1 class="ges3">شوف زحمة انهاردة</h1>
+            <h1 class="ges4">الموصلاتيه بعتو صور الطرق عشان تشوف بنفسك الزحمة..</h1>
+
+            <ul class="photoReports">
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+                <li><a class="lightbox" rel="group1" href="images/photoreport1.jpg"><img class="thumb" src="images/photoreport1.jpg" alt=""/></a></li>
+
+            </ul>
+
+        </div>
+        <div id="highlight" class="highlight fixed" style="background: url(images/gallery/parallax-photoreports.jpg) no-repeat;">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-inner">
+                          <h1 class="ges">هتشوف الزحمة أول بأول .. و تختار الطريق الأنسب ليك و الأقل زحمة ..</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end page 3--> 
+
+
+    <!--start page 4-->
+    <div id="ElMowasalateya" class="page odd section scroll" style="background:#fff url(images/patterns/test-pattern.png) repeat;">
+        <div class="content clearfix slide1">   
+            <h1 class="ges3">الموصلاتيه</h1>
+            <h1 class="ges4">هما دول اكثر ناس بيساعدوك في الزحمة ..</h1>
+
+            <div class="topUsers">
+                <div class="number1">
+                    <div class="block">
+                        <div class="rank">1</div>
+                        <div class="avatar"></div>
+                        <div class="data">
+                            <div class="name">تامر عزب</div>
+                            <div class="points">12345 نقطة</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theRest">
+                    <ul>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="avatar"></div>
+                            <div class="data">
+                                <div class="name">تامر عزب</div>
+                                <div class="points">12345 نقطة</div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="highlight" class="highlight fixed" style="background: url(images/gallery/parallax-topusers.jpg) no-repeat;">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-inner">
+                          <h1 class="ges">علشان توصل للهدف لازم يبقى وراك ناس مؤمنة بيك و بقدرتها على التغيير</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end page 4--> 
+
+    
+    <!--start page 5-->
+    <div id="Bel2arkam" class="page odd section scroll" style="background:#fff url(images/patterns/test-pattern.png) repeat;">
+        <div class="content clearfix slide1">   
+            <h1 class="ges3">لو مش حاسس بقيمة الريبورتات بتاعتك على وصلني, و شايف يعني انها مجتش على الريبورت بتاعك</h1>
+            <h1 class="ges4">بص على الأرقام دي و أنت تعرف أنك عملت كتير</h1>
+
+            <div class="numberOfReports">
+                <strong> 402,512 </strong>
+                <span> ريبورت </span>
+            </div>
+
+            <div class="otherReports">
+                <div class="photoReport">
+                    <i><img src="images/photos.jpg"/></i>
+                    <strong>123,440</strong>
+                    <span>صورة</span>
+                </div>
+                <div class="kiloMeters">
+                    <i><img src="images/distance.jpg"/></i>                    
+                    <strong>21,440</strong>
+                    <span>كيلو متر</span>                    
+                </div>
+                <div class="inTraffic">
+                    <i><img src="images/traffic.jpg"/></i>                                        
+                    <strong>223,441,000</strong>
+                    <span>مسافة</span>
+                </div>
+            </div>
+
+        </div>
+        <div id="highlight" class="highlight fixed" style="background: url(images/gallery/parallax-stats.jpg) no-repeat;">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-inner">
+                          <h1 class="ges">لو كل واحد فينا قال و أنا مالي, عمرنا ما هنعرف نحقق أي إنجاز</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end page 3--> 
+
+    
+    <!--start footer-->
+    <div id="footer" class="even">
+        <div class="content">
+            <div class="logo">
+                <a class="navigateTo" href="#homepage">
+                </a>
+            </div>
+            <p class="copyright">&copy; <a>ًWasalny</a> 2013. All rights reserved.</p>
+        </div>
+        
+    </div>
+    <!--end footer-->
+
+</div>        
+<!--end wrapper-->  
+</body>
+</html>
